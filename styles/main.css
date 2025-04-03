@@ -4,7 +4,7 @@ html{
 }
 
 main{
-    margin-bottom: 220px;
+    margin-bottom: 270px;
 }
 
 footer.footer{
@@ -21,6 +21,7 @@ p{
 
 .hero-scene{
     position: relative;
+    margin-bottom: 15px;
     &::before{
         content:"";
         position: absolute;
@@ -54,7 +55,8 @@ p{
 .image-card{
     position:relative;
     &:hover{
-        .titre-image{
+        .titre-image,
+        .action-image-buttons{
             opacity: 1;
         }
         img{
@@ -74,4 +76,21 @@ p{
         opacity: 0;
         transition: all 0.3s;
     }
+
+    .action-image-buttons{
+                position : absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                padding: 5px;
+                display: flex;
+                justify-content: space-between;
+        opacity: 0;
+        transition: all 0.3s;
+    }
+
+}
+
+.form-label{
+    color: #906427;
 }
